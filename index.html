@@ -9,7 +9,8 @@
         <div style="padding: 5px; background-color: green;" onclick="alertaDiv()">
         <button onclick="alerta()">Saludar</button>
        <script> 
-       function alerta(){
+       function alerta(event){
+        event.stopPropagation();
         alert("Hola")
        }</script>
        </div>
