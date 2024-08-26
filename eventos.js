@@ -1,4 +1,4 @@
-let div=document.getElementById("div")
-document.addEventListener("click", function alertaDiv(div){
+document.addEventListener("click", function alertaDiv(event){
+    event.stopPropagation();
 alert("Hola! Soy el div")
 });
