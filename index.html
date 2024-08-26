@@ -6,12 +6,13 @@
         <title>Taller-eventos</title>
     </head>
     <body>
-        <div style="padding: 5px; background-color: green;" onclick="alertaDiv()">
-        <button onclick="alerta()">Saludar</button>
-    </div>
-       <script> function alerta(){
+        <div id="div" style="padding: 5px; background-color: green;" onclick="alertaDiv()">
+        <button id="button" onclick="alerta()">Saludar</button>
+       <script> 
+       let button=document.getElementById("button")
+       function alerta(button){
         alert("Hola")
        }</script>
-       <script src="eventos.js"></script>
+       </div>
     </body>
 </html>
